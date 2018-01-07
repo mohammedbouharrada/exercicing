@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 var x1 = document.getElementById('d1');
 
 function hello(){
@@ -45,3 +46,16 @@ else { alert('error'); }
 document.getElementById('in3').value = d ; 
 
 }
+=======
+document.getElementById("hor").setAttribute("disabled","true");
+setInterval("horloge()",1000);
+  function horloge(){
+         var date = new Date;
+          var seconds = date.getSeconds();
+          var minutes = date.getMinutes();
+          var hours = date.getHours();
+          var dateVersion = hours + ':' + minutes+ ':'+seconds;
+          var ipt = document.getElementById("hor");
+          ipt.value = dateVersion;
+ }
+>>>>>>> c8c5957e150feda2384305c90c17807d9e626e99
