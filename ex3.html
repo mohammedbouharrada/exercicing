@@ -2,9 +2,9 @@
 <!-- saved from url=(0063)http://coursdewebdesign.com/javascript/exercices/exercice8.html -->
 <html class="no-js"><!--<![endif]-->
     <head><meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-
+        
         <script src="ressources/jquery.min.js"></script>
-
+        
 <title>Exercice 3</title>
 <style>
 * { margin:0; padding:0; }
@@ -12,25 +12,25 @@ body {font-size:30px; padding:3em 5em; font-family:'Helvetica Neue';
     font-weight: bold; }
 
 /* CSS Slider */
-#iesa_slider {
-  overflow:hidden; /* Permet de cacher la zone qui se dÃ©place */
+#iesa_slider { 
+  overflow:hidden; /* Permet de cacher la zone qui se déplace */
   width:400px; /* Taille d'un article */
   height:300px;
   position:relative;
   margin: 0 auto; /* Permet de centrer un bloc en display:block */
 }
 
-#iesa_slider .move {
+#iesa_slider .move { 
   width:1600px; /* 4 (nombre d'articles) x 100px (taille d'un article)  */
   height:300px;
   position:absolute;
   left:0px;
 }
 
-#iesa_slider .move article {
-  width:400px;
-  height:100px;
-  float:left;
+#iesa_slider .move article { 
+  width:400px; 
+  height:100px; 
+  float:left; 
   text-align:center;
 }
 
@@ -38,7 +38,7 @@ body {font-size:30px; padding:3em 5em; font-family:'Helvetica Neue';
   font-family:Arial;
   font-size:70px;
   font-weight:bold;
-  position:absolute;
+  position:absolute; 
   top:80px;
   z-index:1000;
   cursor:pointer;
@@ -75,28 +75,40 @@ body {font-size:30px; padding:3em 5em; font-family:'Helvetica Neue';
       </article>
     </div><!-- .move -->
   </section><!-- #slider_iesa -->
-
+    
     <script>
-
+    
         $('document').ready(function(){
-
+            
             $('.prev').click(function(){
-
+                
                 $('.move article:first-child').appendTo('.move');
-
+                
             });
-
-
+            
+			
             $('.next').click(function(){
-
+                
                 $('.move article:last-child').prependTo('.move');
-
+                
             });
-
+            
         });
-
-
+    
+    
     </script>
 
 </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
